@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'accueil</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/Logo_petit_navire.png">
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1>site exercice</h1>
+    <form action="traitement.php" methode="post" enctype="multipart/form-data">
+        <label for="civilite">homme</label>
+        <input type="radio" name="civilite" value="homme">
+        <label for="civilite">femme</label>
+        <input type="radio" name="civilite" value="femme">
+
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" required>
+
+        <label for="prenom">Prenom</label>
+        <input type="text" name="prenom" required>
+
+        <label for="email">email</label>
+        <input type="email" name="email" required>
+
+        <label for="motdepasse">mot de passe</label>
+        <input type="password" name="motdepasse" required>
+
+        <label for="motpasse2">repete mot de passe</label>
+        <input type="password" name="motpasse2" required>
+
+        <label for="age">age</label>
+        <input type="number" name="age" required>
+
+        <label for="photo">photo</label>
+        <input type="file" name="photo" required>
+
+        <label for="description">description</label>
+        <textarea name="description"></textarea>
+
+        <label for="pays">pays</label>
+        <select name="pays">
+            <option value="belgique">belgique</option>
+            <option value="bresil">bresil</option>
+            <option value="chine">chine</option>
+        </select>
+        
+        <label>passion :</label>
+        <label for="foot">foot</label>
+        <input type="checkbox" name="passion[]" value="valeur-de-la-case">
+
+        <label for="jeux-video">jeux video</label>
+        <input type="checkbox" name="passion[]" value="valeur-de-la-case">
+        
+        <label for="musique">musique</label>
+        <input type="checkbox" name="passion[]" value="valeur-de-la-case">
+    </form>
+    <footer>
+        <img src="assets/img/Logo_petit_navire.png">
+        <p>Nom Prenom</p>
+    </footer>
+    
+</body>
+</html>

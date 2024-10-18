@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-       <img src="assets/img/NOUVEAU-LOGO-CCI-cci_horiz.jpg" alt="Logo de la CCI">
+       <img src="assets/img/imagescci.png" alt="Logo de la CCI">
        <nav>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
@@ -35,7 +35,7 @@
         </section>
         <section class="tableau">
             <h2>Un tableau HTML tout beau
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <th>Nom</th>
@@ -68,5 +68,24 @@
             <p>Choisissez nous pour un travail de qualité</p>
         </div>
     </footer>
+    <form action="traitement.php" method="post">
+        <label for="utilisateur">Nom d'utilisateur :</label>
+        <input type="text" id="utilisateur" name="utilisateur" value="utilisateur" required>
+        <label for="mot-de-passe">Mot de passe :</label>
+        <input type="password" id="mot-de-passe" name="mot-de-passe" required>
+        <input type="submit" value="Se connecter">
+        <label for="fruits">Selectionnez un fruit :</label>
+        <select name="fruits" id="fruits">
+            <optgroup label="fruits frais">
+                <option value="pomme">Pomme</option>
+                <option value="banane">Banane</option>
+                <option value="fraise">Fraise</option>
+
+            </optgroup>
+                
+        </select>
+    </form>
+
+        
 </body>
 </html>

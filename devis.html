@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devis</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>information personnel</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="nom" required>
+
+        <br>
+
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="prenom"required>
+
+        <br>
+
+            <label for="email">email:</label>
+            <input type="text" name="email" id="email" placeholder="jeanmichek@gmail.com" required>
+
+        <br>
+
+            <label for="tel">tel :</label>
+            <input type="tel" name="tel" id="tel" placeholder="0745589912" required>
+
+        <br>
+
+            <label for="adress">adresse :</label>
+            <input type="text" name="adress" id="adress" required>
+
+            <label for="codepostal">code postal :</label>
+            <input type="text" name="codepostal" id="codepostal" required>
+
+            <label for="city">ville :</label>
+            <input type="text" name="city" id="city" required>
+        </fieldset>
+        <fieldset>
+            <legend>Sujet de la demande</legend>
+            <label for="developpement-web">developpement-web</label>
+            <input type="checkbox" name="developpement-web[]" id="developpement-web">
+
+            <label for="graphisme">graphisme</label>
+            <input type="checkbox" name="graphisme[]" id="graphisme">
+
+            <label for="maintenance">maintenance</label>
+            <input type="checkbox" name="maintenance[]" id="maintenance">
+        </fieldset>
+        <fieldset>
+            <legend>Description de la demande</legend>
+            <label for="commentaire">description</label>
+            <textarea name="commentaire" id="commentaire"></textarea>
+
+        <br>
+
+            <label for="budget">budget :</label>
+            <input type="number" name="budget" id="budget">
+        </fieldset>
+
+        <button type="submit">envoyer</button>
+
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
